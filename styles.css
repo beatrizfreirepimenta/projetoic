@@ -1,0 +1,116 @@
+:root {
+  --main-bg-color: #efb1d0;
+  --second-color: palevioletred;
+  --card-color: #ffc0cb;
+  --main-border-radius: 5px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  display: grid;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+ul {
+  margin-left: 2rem;
+}
+
+section {
+  margin: 1rem 0;
+}
+
+img {
+  border-radius: var(--main-border-radius);
+}
+
+.info-area {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--second-color);
+}
+
+.header {
+  height: 3.2rem;
+  align-items: center;
+}
+
+.header-image {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.card {
+  width: 80%;
+  background-color: var(--card-color);
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-around;
+  margin: 20px 0px;
+  padding: 1rem 1rem;
+  border-radius: var(--main-border-radius);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  transition: ease 0.8s;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.main-photo {
+  margin-right: 2rem;
+  width: 17rem;
+}
+
+.family-photo {
+  width: 20rem;
+}
+
+.cacau-photo {
+  width: 17rem;
+  margin-top: 1rem;
+}
+
+.lover-photo {
+  width: 12rem;
+  margin: 20px;
+}
+
+.lover {
+  flex-flow: column;
+}
+
+.gabs-photo {
+  width: 15rem;
+}
+
+.yas-maga-photo {
+  width: 15rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 900px) {
+  .content-card {
+    flex-flow: column;
+  }
+
+  .card {
+    flex-flow: column;
+  }
+}
